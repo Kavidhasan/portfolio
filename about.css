@@ -1,0 +1,87 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face{
+    font-family: 'head_font';
+    src: url('./head_font.ttf');
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'head_Swash';
+  src: url('./head_Swash.ttf');
+  font-style: normal;
+}
+
+body{
+  font-family: 'Inter', san-serif;
+}
+
+.bg{
+    background-color: #111215;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-toggler{
+    margin-right: 15px;
+}
+
+.navbar-toggler .fa.fa-bars{
+    color: white;
+}
+
+.navbar .navbar-nav{
+    margin-left: 800px;
+}
+
+.nav-link{
+  color: white;
+  font-family: 'Inter', 'sans-serif';
+  margin-left: 9px;
+  transition: all 1s ease-in;
+}
+
+.nav-link:hover{
+  color: rgb(161, 160, 160);
+}
+
+.profile{
+  padding: 5% 9% 1%;
+  font-family: 'Inter var';
+}
+
+.para{
+  padding: 1% 9% 1%;
+  font-family: 'Inter var';
+}
+
+.sub2{
+  font-weight: 600;
+}
+
+.name{
+    font-family: 'head_font';
+    font-size: 80px;
+    font-weight: 500;
+}
+
+img{
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.profile .my-img{
+  margin-top: 30px;
+}
+
+video{
+  max-width: 355px;
+}
+
+.para a{
+  text-decoration: none;
+  padding-bottom: 50px;
+}

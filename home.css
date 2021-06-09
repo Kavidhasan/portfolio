@@ -1,0 +1,273 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face{
+    font-family: 'head_font';
+    src: url('./head_font.ttf');
+    font-style: normal;
+}
+
+
+section{
+    background-image: url('./backk.jpg');
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-family: 'head_font';
+    color: white;
+    font-size: 80px;
+    margin-bottom: 0%;
+}
+
+.about{
+    font-family: 'Inter var';
+    color: white;
+    text-align: center;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.me{
+    margin-top: 15px;
+}
+
+.fa-user-o{
+  padding-right: 10px;
+}
+
+.fa-file-o{
+  padding-right: 10px;
+}
+
+.abt-btn {
+  font-family: "Inter var", sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-right: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn {
+  font-family: "Inter var", sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-left: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.abt-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-top: 25px;
+  padding-right: 10px;
+}
+
+ul li a {
+  color: white;
+  font-size: 22px;
+  padding-right: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.works{
+  font-family: 'Inter var';
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+
+.content {
+  position: relative;
+  width: 340px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content .content-overlay1{
+  background: #10984c;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content .content-overlay2{
+  background: #e94a89;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content:hover .content-overlay1{
+  opacity: 1;
+}
+
+.content:hover .content-overlay2{
+  opacity: 1;
+}
+
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h5{
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  font-family: 'Inter var', 'Helvetica', sans-serif;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-family: 'Inter var', 'Helvetica', sans-serif;
+  font-size: 0.8em;
+}
+
+.fadeIn-bottom{
+  top: 80%;
+}
+
+.gap{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.gap .prog{
+  font-family: 'Inter var', sans-serif;
+}
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-device-width : 360px) and (max-device-width : 640px) {
+
+  .about{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .content{
+    margin-bottom: 15px;
+  }
+
+  .gap .prog{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+}
+
+@media screen and (max-width: 990px) and (min-width: 750px) {
+
+  .content{
+    margin-bottom: 15px;
+  }
+
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+
+  .content{
+    margin-bottom: 10px;
+  }
+
+
+}
+  
+
+

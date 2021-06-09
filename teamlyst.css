@@ -1,0 +1,324 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+@font-face{
+    font-family: 'head_font';
+    src: url('./head_font.ttf');
+    font-style: normal;
+}
+
+
+/* NAVBAR */
+html{
+    scroll-behavior: smooth;
+}
+
+.bg{
+    background-color: transparent;
+    transition: all .2s ease-in-out;
+}
+
+.bg.scrolled{
+    background-color: #111215;
+}
+
+.navbar-brand{
+    margin-left: 40px;
+    font-family: 'head_font';
+    font-weight: 500;
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    margin-right: 15px;
+}
+
+.navbar-toggler .fa.fa-bars{
+    color: white;
+}
+
+.navbar .navbar-nav{
+    margin-left: 800px;
+}
+
+.nav-link{
+    color: white;
+    font-family: 'Inter var', 'sans-serif';
+    margin-left: 9px;
+    transition: color 1s ease-in-out;
+}
+
+.nav-link:hover{
+    color: rgb(224, 222, 222);
+}
+
+
+/* TITLE */
+#title{
+    background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
+    height: 350px;
+    width: 100%;
+}
+
+#title .det{
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: 'Inter var','sans serif';
+}
+
+#title .det h5{
+    padding-top: 10px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+#title .det p{
+    padding-top: 10px;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+
+/* DETAILS */
+
+.container{
+    font-family: 'Inter var', sans-serif;
+}
+
+.container .row{
+    padding: 3% 17% 3%;
+    justify-content: center;
+    text-align: center
+}
+
+.container .row .head-title{
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #1d1d1d;
+    padding:0px;
+}
+
+.container .row p{
+    color: gray;
+}
+
+/* PROBLEM */
+
+#problem,#research,#persona,#userflow,#wireframe,.prototype,#logostry{
+    font-family: 'Inter var','sans-serif';
+    padding: 1% 22% 2%;
+}
+
+.titles{
+    font-size: 27px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.sub1{
+    font-size: 14px;
+    font-weight: 400;
+    color: #80828a;
+    margin-bottom: 2px;
+}
+
+.sub1.below{
+    margin-top: 20px;
+}
+
+.sub2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+.sub3{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+}
+
+.paras{
+    font-weight: 400;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+
+.paras span{
+    background-color: rgb(226, 238, 250);
+}
+
+#topbtn{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    color: white;
+    background-color: #212121;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+.image{
+    width: 100%;
+    padding: 0% 10% 0%;    
+}
+
+
+
+.tt{
+    color: #80828a;
+    font-size: 14px;
+}
+
+
+#vid{
+  margin-left: 10%;  
+}
+
+#vid2{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#taskflow{
+    width: 100%;
+    padding: 0% 22% 0%;
+}
+
+figcaption{
+    text-align: center;
+    font-family: 'Inter var', sans-serif;
+    padding-top: 10px;
+}
+
+#logostry img{
+    width: 100%;
+}
+
+.prototype a{
+    text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .nav-link{
+        text-align: center;
+    }
+
+    .navbar .navbar-nav{
+        margin-left: 10px;
+    }
+
+    .navbar-collapse{
+        background-color: black;
+    }
+
+    #title{
+        height: 370px;
+    }
+
+    #problem,#research,#persona,#userflow,#wireframe,.prototype,#logostry{
+        padding: 0% 10%;
+    }
+    
+    #title .det p{
+        padding: 3% 4% 7%;        
+    }
+
+    #vid{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    #vid2{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    #persona img{
+    width: 100%;
+    }
+    
+    .image.ac-card{
+        margin-bottom: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 750px){
+
+    #problem,#research,#persona,#userflow,#wireframe,.prototype,#logostry{
+        padding: 0% 15%;
+    }
+
+    #vid{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    #vid2{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    #persona img{
+    width: 100%;
+    }
+
+    .image.ac-card{
+        margin-bottom: 18px;
+    }
+
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 970px){
+
+    #vid,#vid2{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    .image.ac-card{
+        margin-bottom: 18px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 720px) and (min-width: 500px) {
+
+     #vid,#vid2{
+        max-width: 100%;
+        margin: 0%;
+    }
+
+    .image.ac-card{
+        margin-bottom: 18px;
+    }
+
+
+}
+

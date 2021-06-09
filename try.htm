@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavidhasan</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <script src="https://use.fontawesome.com/d7906df177.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
+</head>
+
+<body>
+
+    <div class="intro">
+        <div class="center-intro">
+            <p class="name">Kavidhasan</p>
+            <p>I love troubleshooting. I'm an aspiring UX Designer and pursuing my Bachelor's degree in Information
+                Technology.
+                I’m looking to develop my experience in UX design.</p>
+            <a href="./about.htm" class="abt-btn">About me</a>
+            <a href="" class="resume-btn">Resume</a>
+            <ul>
+                <li><a href="mailto:mkavidhasan@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                <li><a href="https://linkedin.com/in/kavidhasan-m-b34b25201" target="_blank"><i class="fa fa-linkedin"
+                            aria-hidden="true"></i></a></li>
+                <li><a href="https://dribbble.com/Kavidhasan_M" target="_blank"><i class="fa fa-dribbble"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="works">
+        <img class="slide-up" src="https://img.icons8.com/material-rounded/28/242121/chevron-up.png" />
+        <p id='works'>Works</p>
+        <div class="work-space">
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-lg-4">
+                    <a href="teamlyst.htm" class="work">
+                        <img src="./work1.jpg" alt="Teamlyst logo">
+                        <p class="title">Teamlyst</p>
+                        <p class="work-desp">Connecting students of same thought process</p>
+                    </a>                 
+                </div>
+                <div class="col-lg-">
+                    <a href="https://dribbble.com/Kavidhasan_M" class="work" target="_blank">
+                        <img src="./work2.jpg" alt="Dribbble logo">
+                        <p class="title">Dribbble</p>
+                        <p class="work-desp">My shots on Dribbble</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="https://drive.google.com/file/d/1kEmf8oJZxEAyPhRImjv7VL_H0raWLZPa/view?usp=sharing" class="work"
+                        target="_blank">
+                        <img src="./work3.jpg" alt="Interrupt'21 Contest">
+                        <p class="title">Interrupt'21 U(I+X)</p>
+                        <p class="work-desp">I took part in this contest (7 hours)</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="credit">
+            <p>Developed by Kavidhasan M</p>
+        </div>
+    </div>
+
+
+    
+    
+    
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+
+        $(function () {
+            var wid = $(window).width();
+            console.log(wid);
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 30 && scroll < 450) {
+                    $(".works").css("border-radius", "30px 30px 0px 0px");
+                    $('.slide-up').css('opacity', '100%');
+                }
+                else if (scroll > 495) {
+                    $('.slide-up').css('opacity', '0%');
+                }
+                else {
+                    $(".works").css("border-radius", "0px");
+                }
+
+            });
+
+            $(".slide-up").on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $(".works").offset().top
+                }, 1000);
+            });
+
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>

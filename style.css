@@ -1,0 +1,323 @@
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+@font-face {
+  font-family: "head_font";
+  src: url("./head_font.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "head_Swash";
+  src: url("./head_Swash.ttf");
+  font-style: normal;
+}
+
+* {
+  scroll-behavior: smooth;
+  text-align: center;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.intro {
+  background-image: url(./backk.jpg);
+  background-size: cover;
+  height: 75vh;
+  z-index: -1;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+}
+
+.intro .center-intro {
+  margin-top: 0%;
+  padding-left: 22%;
+  padding-right: 22%;
+}
+
+.intro .center-intro .name {
+  color: white;
+  font-family: "head_font";
+  font-size: 100px;
+  margin-bottom: 0%;
+}
+
+.intro .center-intro p {
+  color: white;
+  font-family: "Inter var", sans-serif;
+  margin-bottom: 30px;
+}
+
+.fa-user-o{
+  padding-right: 10px;
+}
+
+.fa-file-o{
+  padding-right: 10px;
+}
+
+.intro .center-intro .abt-btn {
+  font-family: "Inter var", sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin-right: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro .center-intro .resume-btn {
+  font-family: "Inter var", sans-serif;
+  text-decoration: none;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  padding: 8px 24px;
+  border-radius: 3px;
+  margin-left: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.intro .center-intro .resume-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.intro .center-intro .abt-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.intro .center-intro ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-top: 25px;
+  padding-right: 10px;
+}
+
+.intro .center-intro ul li a {
+  color: white;
+  font-size: 22px;
+  padding-right: 25px;
+  transition: color 0.3s ease-in-out;
+}
+
+.intro .center-intro ul li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.works {
+  background-color: #f8f8f8;
+  border-radius: 30px 30px 0px 0px;
+  height: 100vh;
+  position: absolute;
+  top: 75%;
+  left: 0%;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.slide-up {
+  cursor: pointer;
+}
+
+#works {
+  font-family: "Inter var", sans-serif;
+  font-weight: 500;
+  padding-top: 10px;
+  margin-top: 0%;
+  text-transform: uppercase;
+}
+
+.work-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 8% 7%;
+}
+
+.work-space a {
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  border: solid 10px white;
+}
+
+.work-space a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.work-space a {
+  margin: 0px;
+}
+
+.work-space a img {
+  margin-bottom: 0%;
+}
+
+.work-space a .title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  background-color: white;
+  color: #111111;
+  text-align: start;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  text-transform: uppercase;
+}
+
+.work-space a .work-desp {
+  font-family: "Inter var", sans-serif;
+  text-align: start;
+  color: gray;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  background-color: white;
+  font-size: 15px;
+}
+
+.works .credit{
+  margin-top: 100px;
+}
+
+.works .credit p{
+  color: #8a8a8a;
+  font-size: 12px;
+  text-transform: uppercase;
+    
+}
+
+
+@media screen and (max-width: 430px) {
+  .intro .center-intro {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro .center-intro .name {
+    font-size: 60px;
+  }
+
+  .works {
+    width: 100%;
+    height: unset;
+  }
+
+  .work-space {
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .intro .center-intro .abt-btn {
+    margin-bottom: 15px;
+  }
+
+  .intro .center-intro ul {
+    padding-top: 15px;
+  }
+
+  .work-space a {
+    margin-bottom: 15px;
+  }
+
+  .work-space a img {
+    width: 240px;
+  }
+
+  .work-space a .work-desp {
+    max-width: 240px;
+  }
+
+  .works .links ul {
+    flex-direction: column;
+  }
+
+  .works .credit{
+    margin-top: unset;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 970px) {
+  .work-space {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .intro {
+    height: 50vh;
+  }
+
+  .intro .center-intro {
+    padding-top: 7%;
+  }
+
+  .intro .center-intro .name {
+    font-size: 100px;
+  }
+
+  .works {
+    top: 50%;
+    height: unset;
+  }
+
+}
+
+@media screen and (max-width: 960px) and (min-width: 750px) {
+  .work-space {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .work-space a {
+    margin-bottom: 15px;
+  }
+
+  .intro {
+    height: 50vh;
+  }
+
+  .works {
+    top: 50%;
+    height: unset;
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 500px) {
+  .work-space {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 7%;
+  }
+
+  .work-space a {
+    margin-bottom: 20px;
+  }
+}
