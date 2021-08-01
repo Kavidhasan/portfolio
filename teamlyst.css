@@ -50,7 +50,7 @@ html{
 
 .nav-link{
     color: white;
-    font-family: 'Inter var', 'sans-serif';
+    font-family: 'Inter var', "Inter", sans-serif;
     margin-left: 9px;
     transition: color 1s ease-in-out;
 }
@@ -90,7 +90,7 @@ html{
 /* DETAILS */
 
 .container{
-    font-family: 'Inter var', sans-serif;
+    font-family: 'Inter var', "Inter", sans-serif;
 }
 
 .container .row{
@@ -114,7 +114,7 @@ html{
 /* PROBLEM */
 
 #problem,#research,#persona,#userflow,#wireframe,.prototype,#logostry{
-    font-family: 'Inter var','sans-serif';
+    font-family: 'Inter var',"Inter", 'sans-serif';
     padding: 1% 22% 2%;
 }
 
@@ -204,7 +204,7 @@ html{
 
 figcaption{
     text-align: center;
-    font-family: 'Inter var', sans-serif;
+    font-family: 'Inter var', "Inter", sans-serif;
     padding-top: 10px;
 }
 
