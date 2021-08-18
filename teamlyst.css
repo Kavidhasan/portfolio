@@ -65,6 +65,7 @@ html{
     background-image: linear-gradient(to right, #0F2027, #203A43, #2C5364);
     height: 350px;
     width: 100%;
+    font-family: "Inter", sans-serif;
 }
 
 #title .det{
