@@ -17,7 +17,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 body{
-  font-family: 'Inter', san-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .bg{
@@ -50,12 +50,12 @@ body{
 
 .profile{
   padding: 5% 9% 1%;
-  font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
 }
 
 .para{
   padding: 1% 9% 1%;
-  font-family: 'Inter var';
+  font-family: 'Inter', sans-serif;
 }
 
 .sub2{
